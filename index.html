@@ -12,7 +12,7 @@
 
 </head>
 
-<body class="bg[#1A0B2E]">
+<body class="bg[#1A0B2E] font-inter">
     <!-- <nav class="nav-bar">
         <div class="max-w-75/100 lg:mx-auto lg:flex lg:justify-between lg:h-16 items-center">
             <div class="logo-image">
@@ -41,16 +41,23 @@
 
     <!-- Banner Section -->
     <section class="hero-banner">
-        <div class="hero-container bg-[url('./assets/hero-bg.png')] bg-cover bg-center h-120">
-            <div class="hero-image pt-10"> 
-                <img src="./assets/hero-circle.png" alt="" class="size-60 mx-auto">
+        <div class="hero-container bg-[url('./assets/hero-bg.png')] bg-cover bg-center h-130">
+            <div class="hero-image pt-10">
+                <div class="relative size-62 mx-auto">
+                    <img src="./assets/hero-circle.png" alt="" class="w-full h-full rounded-full" />
+                    <img src="./assets/microphone.png" alt="" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-14"/>
+                    <button
+                        class="absolute top-1/10 left-4/10 translate-x-1/2 -translate-y-1/2 bg-[#00FF88] rounded-full px-5 py-2  text-[#1A0B2E] text-lg font-semibold z-10 animate-pulse [animation-duration:2s]">NEW
+                    </button>
+                    <span class="absolute top-1/10 left-4/10 translate-x-1/2 -translate-y-1/2 bg-[#ffae00] rounded-full px-10 py-5 ring-2 ring-[#ff00ee] animate-ping [animation-duration:2s]"></span>
+                </div>
             </div>
-            <div class="hero-content text-white mt-10 text-center *:mb-4">
+            <div class="hero-content max-w-9/10 mx-auto text-white mt-7 text-center *:mb-5">
                 <h1 class="text-4xl font-extrabold">TechWave</h1>
-                <p>Your daily dose of tech insights, productivity hacks, and personal growth</p>
+                <p class="text-lg font-normal">Your daily dose of tech insights, productivity hacks, and personal growth</p>
                 <div class="hero-btn-cont">
-                    <button>Listen on Spotify</button>
-                    <button>Subscribe</button>
+                    <button class="mr-4 border-0 rounded-full py-3 px-4 text-[1rem] bg-linear-to-tr from-[#F7E93F] from-0% via-[#FB09B4] via-51% to-[#9100F8] to-100% text-white font-semibold"><i class="fa-brands fa-spotify"></i> Listen on Spotify</button>
+                    <button class="border rounded-full py-3 px-4 text-[1rem] text-[#00FF88] font-semibold"><i class="fa-regular fa-envelope"></i> Subscribe</button>
                 </div>
             </div>
         </div>
