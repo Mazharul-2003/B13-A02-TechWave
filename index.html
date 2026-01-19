@@ -28,7 +28,7 @@
     </nav> -->
 
     <!-- Navbar Mobile Device -->
-    <nav class="nav-bar">
+    <nav class="nav-bar hidden">
         <div class="nav-conatiner max-w-9/10 mx-auto h-20 flex justify-between items-center">
             <div class="nav-logo">
                 <img src="./assets/logo.png" alt="">
@@ -40,24 +40,62 @@
     </nav>
 
     <!-- Banner Section -->
-    <section class="hero-banner">
-        <div class="hero-container bg-[url('./assets/hero-bg.png')] bg-cover bg-center h-130">
+    <section class="hero-banner hidden">
+        <div class="hero-container bg-[url('./assets/hero-bg.png')] bg-cover bg-center h-135">
             <div class="hero-image pt-10">
                 <div class="relative size-62 mx-auto">
                     <img src="./assets/hero-circle.png" alt="" class="w-full h-full rounded-full" />
-                    <img src="./assets/microphone.png" alt="" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-14"/>
+                    <img src="./assets/microphone.png" alt=""
+                        class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-14" />
                     <button
                         class="absolute top-1/10 left-4/10 translate-x-1/2 -translate-y-1/2 bg-[#00FF88] rounded-full px-5 py-2  text-[#1A0B2E] text-lg font-semibold z-10 animate-pulse [animation-duration:2s]">NEW
                     </button>
-                    <span class="absolute top-1/10 left-4/10 translate-x-1/2 -translate-y-1/2 bg-[#ffae00] rounded-full px-10 py-5 ring-2 ring-[#ff00ee] animate-ping [animation-duration:2s]"></span>
+                    <span
+                        class="absolute top-1/10 left-4/10 translate-x-1/2 -translate-y-1/2 bg-[#ffae00] rounded-full px-10 py-5 ring-2 ring-[#ff00ee] animate-ping [animation-duration:2s]"></span>
                 </div>
             </div>
             <div class="hero-content max-w-9/10 mx-auto text-white mt-7 text-center *:mb-5">
                 <h1 class="text-4xl font-extrabold">TechWave</h1>
-                <p class="text-lg font-normal">Your daily dose of tech insights, productivity hacks, and personal growth</p>
+                <p class="text-lg font-normal">Your daily dose of tech insights, productivity hacks, and personal growth
+                </p>
                 <div class="hero-btn-cont">
-                    <button class="mr-4 border-0 rounded-full py-3 px-4 text-[1rem] bg-linear-to-tr from-[#F7E93F] from-0% via-[#FB09B4] via-51% to-[#9100F8] to-100% text-white font-semibold"><i class="fa-brands fa-spotify"></i> Listen on Spotify</button>
-                    <button class="border rounded-full py-3 px-4 text-[1rem] text-[#00FF88] font-semibold"><i class="fa-regular fa-envelope"></i> Subscribe</button>
+                    <button
+                        class="mr-4 border-0 rounded-full py-3 px-4 text-[1rem] bg-linear-to-tr from-[#F7E93F] from-0% via-[#FB09B4] via-51% to-[#9100F8] to-100% text-white font-semibold"><i
+                            class="fa-brands fa-spotify"></i> Listen on Spotify</button>
+                    <button class="border rounded-full py-3 px-4 text-[1rem] text-[#00FF88] font-semibold"><i
+                            class="fa-regular fa-envelope"></i> Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section">
+        <div class="about-container hero-content max-w-9/10 mx-auto text-center">
+            <div class="content my-10 *:mb-4">
+                <h1 class="text-4xl font-bold capitalize">About the Podcast</h1>
+                <p class="leading-5">TechWave is your go-to podcast for staying ahead in the fast-paced world of
+                    technology. We break down
+                    complex topics into digestible insights, explore productivity strategies that actually work, and
+                    share stories of personal growth from industry leaders. </p>
+                <p>Join thousands of young professionals and tech enthusiasts who start their day with TechWave.</p>
+            </div>
+            <div class="statistics grid grid-cols-2 grid-rows-2 justify-between gap-x-20 gap-y-10">
+                <div>
+                    <h1 class="text-[#00FF88] font-bold text-[40px]">150K+</h1>
+                    <p class="leading-5 font-[1rem] uppercase">Monthly Listeners</p>
+                </div>
+                <div>
+                    <h1 class="text-[#00FF88] font-bold text-[40px]">200K+</h1>
+                    <p class="leading-5 font-[1rem] uppercase">Episodes Published</p>
+                </div>
+                <div>
+                    <h1 class="text-[#00FF88] font-bold text-[40px]">4.9★</h1>
+                    <p class="leading-5 font-[1rem] uppercase">Average Rating</p>
+                </div>
+                <div>
+                    <h1 class="text-[#00FF88] font-bold text-[40px]">50+</h1>
+                    <p class="leading-5 font-[1rem] uppercase">Industry Experts</p>
                 </div>
             </div>
         </div>
