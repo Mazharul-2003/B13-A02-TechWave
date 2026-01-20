@@ -55,7 +55,7 @@
                     class="absolute top-1/10 left-4/10 lg:left-1/2 translate-x-1/2 -translate-y-1/2 bg-[#ffae00] rounded-full px-10 py-5 ring-2 ring-[#ff00ee] animate-ping [animation-duration:2s]"></span>
             </div>
         </div>
-        <div class="hero-content max-w-[90%] mx-auto text-white text-center *:mb-5 py-5">
+        <div class="hero-content max-w-[90%] mx-auto text-white text-center *:mb-5 py-5 lg:max-w-[75%]">
             <h1 class="text-4xl font-extrabold">TechWave</h1>
             <p class="text-sm text-[#F5F5F5]">Your daily dose of tech insights, productivity hacks, and personal growth
             </p>
@@ -70,8 +70,8 @@
     </section>
 
     <!-- About Section -->
-    <section class="about-section bg-[#1A0B2E] py-7 max-w-full">
-        <div class="about-container max-w-[90%] mx-auto text-center">
+    <section class="about-section bg-[#1A0B2E] py-7 max-w-full lg:pt-7 lg:pb-0">
+        <div class="about-container max-w-[90%] mx-auto text-center lg:max-w-[75%]">
             <div class="content *:mb-4 text-white lg:px-50 lg:mb-10 lg:border-b border-white/10">
                 <h1 class="text-4xl font-bold capitalize">About the Podcast</h1>
                 <p class="text-[1rem] leading-5 lg:leading-8 text-[#F5F5F5] lg:mb-7">TechWave is your go-to podcast for staying ahead in the fast-paced world of
@@ -103,11 +103,12 @@
     </section>
 
     <!-- Why Choose Section -->
-    <section class="why-choose max-w-full py-10 bg-[#230E3D] hidden">
-        <div class="why-choose-container max-w-[90%] mx-auto text-white">
+    <section class="why-choose max-w-full py-10 bg-[#230E3D] lg:py-15">
+        <div class="why-choose-container max-w-[90%] mx-auto text-white lg:max-w-[75%]">
             <h1 class="text-center text-4xl font-bold">Why Choose TechWave</h1>
-            <div class="info-card-container mt-4 grid gap-y-5">
-                <div class="card p-6 w-full bg-[#351165] rounded-2xl *:mb-4">
+            
+            <div class="info-card-container mt-4 flex flex-col gap-y-5 lg:grid lg:grid-cols-3 lg:grid-rows-3 lg:gap-5">
+                <div class="card p-6 w-full bg-[#351165] rounded-2xl *:mb-4 lg:row-span-2 lg:col-span-1 lg:pt-35">
                     <img src="./assets/headphone.png" alt="">
                     <h2 class="text-2xl font-bold">Premium Audio Quality</h2>
                     <p class="text-[1rem] leading-7 text-[#F5F5F5]">Experience crystal-clear sound with professional-grade recording
@@ -115,19 +116,22 @@
                         engineering. Every episode is mastered for optimal listening across all devices and platforms.
                     </p>
                 </div>
-                <div class="card p-6 w-full bg-[#351165] rounded-2xl *:mb-4">
+                
+                <div class="card p-6 w-full bg-[#351165] rounded-2xl *:mb-4 lg:col-span-2 lg:row-span-1">
                     <img src="./assets/device.png" alt="">
                     <h2 class="text-2xl font-bold">Mobile Friendly</h2>
                     <p class="text-[1rem] leading-7 text-[#F5F5F5]">Listen on the go with seamless mobile experience and offline
                         downloads.
                 </div>
-                <div class="card p-6 w-full bg-[#351165] rounded-2xl *:mb-4">
+                
+                <div class="card p-6 w-full bg-[#351165] rounded-2xl *:mb-4 lg:col-span-2 lg:row-span-1">
                     <img src="./assets/location.png" alt="">
                     <h2 class="text-2xl font-bold">Global Community</h2>
                     <p class="text-[1rem] leading-7 text-[#F5F5F5]">Connect with tech enthusiasts from over 120 countries worldwide.
                     </p>
                 </div>
-                <div class="card p-6 w-full bg-[#351165] rounded-2xl *:mb-4">
+                
+                <div class="card p-6 w-full bg-[#351165] rounded-2xl *:mb-4 lg:col-span-2 lg:row-span-1">
                     <img src="./assets/Icon (Stroke).png" alt="">
                     <h2 class="text-2xl font-bold">Exclusive Interviews</h2>
                     <p class="text-[1rem] leading-7 text-[#F5F5F5]">Get unprecedented access to industry titans, startup founders,
@@ -135,7 +139,8 @@
                         diving deep into their journeys, failures, and success strategies.
                     </p>
                 </div>
-                <div class="card p-6 w-full bg-[#351165] rounded-2xl *:mb-4">
+                
+                <div class="card p-6 w-full bg-[#351165] rounded-2xl *:mb-4 lg:col-span-1 lg:row-span-1">
                     <img src="./assets/resource.png" alt="">
                     <h2 class="text-2xl font-bold">Rich Resources</h2>
                     <p class="text-[1rem] leading-7 text-[#F5F5F5]">Access show notes, transcripts, and additional learning materials
