@@ -813,6 +813,11 @@
       flex-direction: column;
     }
   }
+  .lg\:flex-row {
+    @media (width >= 992px) {
+      flex-direction: row;
+    }
+  }
   .lg\:gap-5 {
     @media (width >= 992px) {
       gap: calc(var(--spacing) * 5);
