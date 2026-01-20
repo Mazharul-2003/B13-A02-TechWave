@@ -13,8 +13,10 @@
 </head>
 
 <body class="font-inter bg-black max-w-full overflow-x-hidden m-0 p-0">
-    <!-- <nav class="nav-bar">
-        <div class="max-w-75/100 lg:mx-auto lg:flex lg:justify-between lg:h-16 items-center">
+    
+    <!-- Navbar Large Device -->
+    <nav class="nav-bar bg-[#1A0B2E] max-w-full border-b border-white/10">
+        <div class="nav-conatiner max-w-[75%] mx-auto h-20 lg:flex justify-between items-center hidden">
             <div class="logo-image">
                 <img src="assets/logo.png" alt="">
             </div>
@@ -23,12 +25,12 @@
                 <li><a href="#">Episods</a></li>
                 <li><a href="#">Host</a></li>
             </ul>
-            <button class="border-0 rounded-full py-3 px-4 text-[1rem] bg-linear-to-tr from-[#F7E93F] from-0% via-[#FB09B4] via-51% to-[#9100F8] to-100% text-white font-semibold">Subscribe <i class="fa-solid fa-arrow-right"></i></button>
+            <button class="border-0 rounded-full py-3 px-4 text-[1rem] bg-linear-to-tr from-[#F7E93F] from-0% via-[#FB09B4] via-51% to-[#9100F8] to-100% text-white font-semibold cursor-pointer">Subscribe <i class="fa-solid fa-arrow-right"></i></button>
         </div>
-    </nav> -->
+    </nav>
 
     <!-- Navbar Mobile Device -->
-    <nav class="nav-bar bg-[#1A0B2E] max-w-full border-b border-white/10">
+    <nav class="nav-bar bg-[#1A0B2E] max-w-full border-b border-white/10 lg:hidden">
         <div class="nav-conatiner max-w-[90%] mx-auto h-20 flex justify-between items-center">
             <div class="nav-logo">
                 <img src="./assets/logo.png" alt="">
@@ -41,23 +43,23 @@
 
     <!-- Banner Section -->
     <section class="hero-banner max-w-full bg-[url('./assets/hero-bg.png')] bg-cover bg-center">
-        <div class="hero-image pt-10">
-            <div class="relative size-62 mx-auto">
+        <div class="hero-image pt-10 lg:pt-15">
+            <div class="relative size-62 lg:size-66 mx-auto">
                 <img src="./assets/hero-circle.png" alt="" class="w-full h-full rounded-full" />
                 <img src="./assets/microphone.png" alt=""
                     class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-14" />
                 <button
-                    class="absolute top-1/10 left-4/10 translate-x-1/2 -translate-y-1/2 bg-[#00FF88] rounded-full px-5 py-2  text-[#1A0B2E] text-lg font-semibold z-10 animate-pulse [animation-duration:2s]">NEW
+                    class="absolute top-1/10 left-4/10 lg:left-1/2 translate-x-1/2 -translate-y-1/2 bg-[#00FF88] rounded-full px-5 py-2  text-[#1A0B2E] text-lg font-semibold z-10 animate-pulse [animation-duration:2s]">NEW
                 </button>
                 <span
-                    class="absolute top-1/10 left-4/10 translate-x-1/2 -translate-y-1/2 bg-[#ffae00] rounded-full px-10 py-5 ring-2 ring-[#ff00ee] animate-ping [animation-duration:2s]"></span>
+                    class="absolute top-1/10 left-4/10 lg:left-1/2 translate-x-1/2 -translate-y-1/2 bg-[#ffae00] rounded-full px-10 py-5 ring-2 ring-[#ff00ee] animate-ping [animation-duration:2s]"></span>
             </div>
         </div>
         <div class="hero-content max-w-[90%] mx-auto text-white text-center *:mb-5 py-5">
             <h1 class="text-4xl font-extrabold">TechWave</h1>
             <p class="text-sm text-[#F5F5F5]">Your daily dose of tech insights, productivity hacks, and personal growth
             </p>
-            <div class="hero-btn-cont">
+            <div class="hero-btn-cont lg:mb-8">
                 <button
                     class="mr-4 border-0 rounded-full py-3 px-4 text-[1rem] bg-linear-to-tr from-[#F7E93F] from-0% via-[#FB09B4] via-51% to-[#9100F8] to-100% text-white font-semibold cursor-pointer"><i
                         class="fa-brands fa-spotify"></i> Listen on Spotify</button>
@@ -68,7 +70,7 @@
     </section>
 
     <!-- About Section -->
-    <section class="about-section bg-[#1A0B2E] py-7 max-w-full">
+    <section class="about-section bg-[#1A0B2E] py-7 max-w-full hidden">
         <div class="about-container max-w-[90%] mx-auto text-center">
             <div class="content *:mb-4 text-white">
                 <h1 class="text-4xl font-bold capitalize">About the Podcast</h1>
@@ -100,7 +102,7 @@
     </section>
 
     <!-- Why Choose Section -->
-    <section class="why-choose max-w-full py-10 bg-[#230E3D]">
+    <section class="why-choose max-w-full py-10 bg-[#230E3D] hidden">
         <div class="why-choose-container max-w-[90%] mx-auto text-white">
             <h1 class="text-center text-4xl font-bold">Why Choose TechWave</h1>
             <div class="info-card-container mt-4 grid gap-y-5">
@@ -144,7 +146,7 @@
     </section>
 
     <!-- Featured Episodes Section -->
-    <section class="featured-epison-section max-w-full py-10 bg-[#1A0B2E] text-white">
+    <section class="featured-epison-section max-w-full py-10 bg-[#1A0B2E] text-white hidden">
         <div class="featured-container max-w-[90%] mx-auto">
             <h1 class="text-center text-4xl font-bold">Featured Episodes</h1>
             <div class="video-card-container mt-3 flex flex-col gap-5">
@@ -207,7 +209,7 @@
     </section>
 
     <!-- Host Section -->
-    <section class="host-section max-w-full bg-[#1A0B2E] pb-6 pt-2 text-white">
+    <section class="host-section max-w-full bg-[#1A0B2E] pb-6 pt-2 text-white hidden">
         <div class="featured-container max-w-[90%] mx-auto">
             <h1 class="text-center text-4xl font-bold">Meet the Host</h1>
             <div class="host-container mt-6 text-center rounded-3xl bg-[#250D44] p-6">
@@ -240,7 +242,7 @@
     </section>
 
     <!-- Footer Section -->
-    <footer class="max-w-full">
+    <footer class="max-w-full hidden">
         <div
             class="footer-container bg-[url('./assets/footer-bg.png')] bg-cover bg-center h-62 flex justify-center items-center flex-col gap-5">
             <div class="footer-logo">
